@@ -1,1 +1,7 @@
-/* Acá va tu código */
+#boxOne{
+    display:block;
+}
+
+#boxTwo, #boxThree{
+    display:none;
+}

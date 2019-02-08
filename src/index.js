@@ -1,12 +1,9 @@
 //I. Implementación para ocultar sección 1 (boxOne) y mostrar sección 2 (boxTwo)
 
-//Constante para almacenar la caja 2 (boxTwo)
-const containerTwo = document.getElementById('boxTwo');
-
 //Constante que obtiene el evento click del boton btnUse
 const button_use = document.getElementById('btnUse');
 
-//Arrow function que ocurre cuando el usuariopresionar el boton "Usar", oculta la sección 1 y muestra la sección 2
+//Arrow function que ocurre cuando el usuario presionar el boton "Usar", oculta la sección 1 y muestra la sección 2
 button_use.addEventListener('click',()=>{
 
     let cipherScreen=document.getElementById("boxTwo");
@@ -18,48 +15,59 @@ button_use.addEventListener('click',()=>{
 
 //II. Implementación para ocultar sección 2 (boxTwo) y mostrar sección 3 (boxThree)
 
-//Constante para almacenar la sección 3 (boxTwo)
-const containerThree = document.getElementById('boxThree');
-
 //a) Constante que obtiene el evento click del boton btnEncode
 const button_encode = document.getElementById('btnEncode');
 
-//Arrow function que ocurre cuando el usuariopresionar el boton "Cifrar", oculta la sección 2 y muestra la sección 3
+//Arrow function que ocurre cuando el usuario presionar el boton "Cifrar", oculta la sección 2 
+//y muestra la sección 3 con el texto cifrado
 button_encode.addEventListener('click',()=>{
-
+    //constantes para guardar los datos desde el html
     const inputOffset=document.getElementById('offset')
     const inputText=document.getElementById('text')
 
-    //variables para rescatar del html los datos ingresados por el usuario
+    //Guarda en las variables (valueOffset y valueText) los datos, para traspasarlas al cipher.js
     let valueOffset=inputOffset.value;
     let valueText=inputText.value;
 
-    //Mostrar pantalla 3
-    let resultEncodeScreen=document.getElementById("boxThree");
-    resultEncodeScreen.style.display="block";
-
-    let cipherScreen=document.getElementById("boxTwo");
-    cipherScreen.style.display="none";
-
+    //Se trae del cipher.js el resultado de ccipher.encode y lo imprime en la pantalla de resultados
+    //(resultText)
     document.getElementById("resultText").innerHTML
     += cipher.encode(valueOffset, valueText);
-  
-    
 
+    //Activa la ventana n°3
+    let resultEncodeScreen=document.getElementById("boxThree");
+    resultEncodeScreen.style.display="block";
+    //Desactiva la ventana n°2
+    let cipherScreen=document.getElementById("boxTwo");
+    cipherScreen.style.display="none";
 
 })
 
 //b) Constante que obtiene el evento click del boton btnDecode
 const button_decode = document.getElementById('btnDecode');
 
-//Arrow function que ocurre cuando el usuario presionar el boton "Decifrar", oculta la sección 2 y muestra la sección 3
+//Arrow function que ocurre cuando el usuario presionar el boton "Cifrar", oculta la sección 2 
+//y muestra la sección 3 con el texto cifrado
 button_decode.addEventListener('click',()=>{
+    //constantes para guardar los datos desde el html
+    const inputOffset=document.getElementById('offset')
+    const inputText=document.getElementById('text')
 
-    let resultDecodeScreen=document.getElementById("boxThree");
-    resultDecodeScreen.style.display="block";
+    //Guarda en las variables (valueOffset y valueText) los datos, para traspasarlas al cipher.js
+    let valueOffset=inputOffset.value;
+    let valueText=inputText.value;
 
+    //Se trae del cipher.js el resultado de ccipher.encode y lo imprime en la pantalla de resultados
+    //(resultText)
+    document.getElementById("resultText").innerHTML
+    += cipher.decode(valueOffset, valueText);
+
+    //Activa la ventana n°3
+    let resultEncodeScreen=document.getElementById("boxThree");
+    resultEncodeScreen.style.display="block";
+    //Desactiva la ventana n°2
     let cipherScreen=document.getElementById("boxTwo");
-    cipherScreen.style.display="none";  
+    cipherScreen.style.display="none";
 
 })
 

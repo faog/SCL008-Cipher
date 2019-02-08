@@ -15,12 +15,13 @@ button_use.addEventListener('click',()=>{
 
 //II. Implementación para ocultar sección 2 (boxTwo) y mostrar sección 3 (boxThree)
 
-//a) Constante que obtiene el evento click del boton btnEncode
+//1) Constante que obtiene el evento click del boton btnEncode
 const button_encode = document.getElementById('btnEncode');
 
 //Arrow function que ocurre cuando el usuario presionar el boton "Cifrar", oculta la sección 2 
 //y muestra la sección 3 con el texto cifrado
 button_encode.addEventListener('click',()=>{
+
     //constantes para guardar los datos desde el html
     const inputOffset=document.getElementById('offset')
     const inputText=document.getElementById('text')
@@ -29,10 +30,17 @@ button_encode.addEventListener('click',()=>{
     let valueOffset=inputOffset.value;
     let valueText=inputText.value;
 
-    //Se trae del cipher.js el resultado de ccipher.encode y lo imprime en la pantalla de resultados
-    //(resultText)
-    document.getElementById("resultText").innerHTML
-    += cipher.encode(valueOffset, valueText);
+    //Se trae del cipher.js el resultado de cipher.encode y los guardo en una variable
+    let encodeResult=cipher.encode(valueOffset, valueText);
+    
+    //condición para evaluar los casos en que ingresan carácteres incorrectos
+    if(encodeResult){
+        //Si no ocurre un error de validación, se escribre el valor decifrado
+        document.getElementById("resultText").innerHTML
+        += encodeResult;
+    }else{
+        return;
+    }
 
     //Activa la ventana n°3
     let resultEncodeScreen=document.getElementById("boxThree");
@@ -43,12 +51,13 @@ button_encode.addEventListener('click',()=>{
 
 })
 
-//b) Constante que obtiene el evento click del boton btnDecode
+//2) Constante que obtiene el evento click del boton btnDecode
 const button_decode = document.getElementById('btnDecode');
 
 //Arrow function que ocurre cuando el usuario presionar el boton "Cifrar", oculta la sección 2 
 //y muestra la sección 3 con el texto cifrado
 button_decode.addEventListener('click',()=>{
+
     //constantes para guardar los datos desde el html
     const inputOffset=document.getElementById('offset')
     const inputText=document.getElementById('text')
@@ -57,10 +66,17 @@ button_decode.addEventListener('click',()=>{
     let valueOffset=inputOffset.value;
     let valueText=inputText.value;
 
-    //Se trae del cipher.js el resultado de ccipher.encode y lo imprime en la pantalla de resultados
-    //(resultText)
-    document.getElementById("resultText").innerHTML
-    += cipher.decode(valueOffset, valueText);
+    //Se trae del cipher.js el resultado de cipher.decode y los guardo en una variable  
+    let decodeResult=cipher.decode(valueOffset, valueText);
+
+    //condición para evaluar los casos en que ingresan carácteres incorrectos
+    if(decodeResult){
+        //Si no ocurre un error de validación, se escribre el valor decifrado
+        document.getElementById("resultText").innerHTML
+        += decodeResult;
+    }else{
+        return;
+    }
 
     //Activa la ventana n°3
     let resultEncodeScreen=document.getElementById("boxThree");
@@ -87,6 +103,11 @@ button_newText.addEventListener('click',()=>{
     let resultDecodeScreen=document.getElementById("boxThree");
     resultDecodeScreen.style.display="none";
 
+    //Limpia el offset y la caja de texto
+    document.getElementById("offset").value = "";
+    document.getElementById("text").value = "";
+    //Limpia el texto cifrado/decifrado
+    document.getElementById("resultText").innerHTML = "";
 })
 
 //IV. Implementación boton salir (redirije a google)

@@ -9,10 +9,10 @@ const button_use = document.getElementById('btnUse');
 //Arrow function que ocurre cuando el usuariopresionar el boton "Usar", oculta la sección 1 y muestra la sección 2
 button_use.addEventListener('click',()=>{
 
-let cipherScreen=document.getElementById("boxTwo");
-cipherScreen.style.display="block";
-let welcomeScreen=document.getElementById("boxOne");
-welcomeScreen.style.display="none";  
+    let cipherScreen=document.getElementById("boxTwo");
+    cipherScreen.style.display="block";
+    let welcomeScreen=document.getElementById("boxOne");
+    welcomeScreen.style.display="none";  
 
 })
 
@@ -27,11 +27,25 @@ const button_encode = document.getElementById('btnEncode');
 //Arrow function que ocurre cuando el usuariopresionar el boton "Cifrar", oculta la sección 2 y muestra la sección 3
 button_encode.addEventListener('click',()=>{
 
-let resultEncodeScreen=document.getElementById("boxThree");
-resultEncodeScreen.style.display="block";
+    const inputOffset=document.getElementById('offset')
+    const inputText=document.getElementById('text')
 
-let cipherScreen=document.getElementById("boxTwo");
-cipherScreen.style.display="none";  
+    //variables para rescatar del html los datos ingresados por el usuario
+    let valueOffset=inputOffset.value;
+    let valueText=inputText.value;
+
+    //Mostrar pantalla 3
+    let resultEncodeScreen=document.getElementById("boxThree");
+    resultEncodeScreen.style.display="block";
+
+    let cipherScreen=document.getElementById("boxTwo");
+    cipherScreen.style.display="none";
+
+    document.getElementById("resultText").innerHTML
+    += cipher.encode(valueOffset, valueText);
+  
+    
+
 
 })
 
@@ -41,11 +55,11 @@ const button_decode = document.getElementById('btnDecode');
 //Arrow function que ocurre cuando el usuario presionar el boton "Decifrar", oculta la sección 2 y muestra la sección 3
 button_decode.addEventListener('click',()=>{
 
-let resultDecodeScreen=document.getElementById("boxThree");
-resultDecodeScreen.style.display="block";
+    let resultDecodeScreen=document.getElementById("boxThree");
+    resultDecodeScreen.style.display="block";
 
-let cipherScreen=document.getElementById("boxTwo");
-cipherScreen.style.display="none";  
+    let cipherScreen=document.getElementById("boxTwo");
+    cipherScreen.style.display="none";  
 
 })
 
@@ -59,11 +73,11 @@ oculta la sección 3 y muestra la sección 2*/
 
 button_newText.addEventListener('click',()=>{
 
-let cipherScreen=document.getElementById("boxTwo");
-cipherScreen.style.display="block"; 
+    let cipherScreen=document.getElementById("boxTwo");
+    cipherScreen.style.display="block"; 
 
-let resultDecodeScreen=document.getElementById("boxThree");
-resultDecodeScreen.style.display="none";
+    let resultDecodeScreen=document.getElementById("boxThree");
+    resultDecodeScreen.style.display="none";
 
 })
 
@@ -73,7 +87,6 @@ const button_exit = document.getElementById('btnExit');
 
 /*Arrow function que ocurre cuando el usuario presionar el boton "Decifrar", 
 oculta la sección 3 y muestra la sección 2*/
-
 button_exit.addEventListener('click',()=>{
     
     return alert("Gracias por usar esta aplicación. Hasta la próxima");

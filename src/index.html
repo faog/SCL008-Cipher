@@ -7,60 +7,48 @@
   </head>
 
   <body>
-    <div id="boxOne">
-      <header>
-        <h1>Código César</h1>
-      </header>
-      <main>
-        <h1>Bienvenida</h1>
-        <h3>Indicaciones de uso</h3>
-        <p>bla bla</p>
-        <button id="btnUse">Usar</button>
-      </main>
-      <footer>
+    <!--Encabezado página-->
+    <header> 
+      <h1>Código César</h1>
+    </header>
+    <!--Primera sección-->
+    <section id="boxOne"> 
+      <h1>Bienvenida</h1>
+      <h3>Indicaciones de uso</h3>
+      <p>bla bla</p>
+      <button id="btnUse">Usar</button>
+    </section>
+    <!--Segunda sección-->
+    <section id="boxTwo">
+      <div class="form">
+        <div>
+        <input type="text" placeholder="Ingresa tu desplazamiento" id="offset" title="debe ser un digito positivo" autofocus> 
+        </div>
 
-      </footer>
-    </div>
-
-    <div id="boxTwo">
-      <header>
-        <h1>Código César</h1>
-      </header>
-      <main>
-        <div class="form">
-          <div>
-            <input type="text" placeholder="Ingresa tu desplazamiento" id="offset" title="debe ser un digito positivo" autofocus> 
-          </div>
-          <div>
-            <textarea placeholder="Ingresa tu texto" title="debes ingresar mayúsculas" id="text"></textarea> 
-          </div>
-          <button id="btnEncode">Cifrar</button>
-          <button id="btnDecode">Decifrar</button>
-        </div> 
-      </main>
-      <footer>
-
-      </footer>
-    </div>
-
-    <div id="boxThree">
-      <header>
-        <h1>Código César</h1>
-      </header>
-      <main>
+        <div>
+          <textarea placeholder="Ingresa tu texto" title="debes ingresar mayúsculas" id="text"></textarea> 
+        </div>
+        <button id="btnEncode">Cifrar</button>
+        <button id="btnDecode">Decifrar</button>
+      </div> 
+    </section >
+    <!--Tercera sección-->
+    <section id="boxThree">
         <div class="form">
           <div>
             <textarea id="resultText"></textarea> 
           </div>
           <button id="btnNewText">Nuevo texto</button>
-          <button id="btnDecode">Salir</button>
+          <a href="http://www.google.cl">
+            <button id="btnExit">Salir</button>
+          </a>
         </div> 
-      </main>
-      <footer>
-
-      </footer>
-    </div>
-
+    </section>
+    <!--Creditos de la página-->
+    <footer>
+      <p>Aqui va el footer</p>
+    </footer>
+   
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

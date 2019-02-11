@@ -20,7 +20,8 @@ window.cipher = {
           return alert("No estan permitidos los caracteres especiales");
       }    
   }
-  return result;
+  
+  return `Tu nueva contraseña es: ${result}`;
   },
   
   decode: (valueOffset, valueText) => {
@@ -44,6 +45,6 @@ window.cipher = {
           return alert("No estan permitidos los caracteres especiales");
       }    
   }
-  return result;
+  return `La contraseña fue generada de: ${result}`;
   }
 };

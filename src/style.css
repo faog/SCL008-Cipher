@@ -32,14 +32,15 @@
 
 #navbar{
     background:#01579B;
-    padding-left: 100px;
-    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 20px;
 }
   
 #elementsNavbar li {
     list-style: none;
     display: inline-block;   
-    padding: 20px;
+    padding-top: 20px;
+    padding-left: 60px;
  
 } 
   
@@ -47,15 +48,27 @@
     text-decoration: none;
     color: white;
     text-transform: uppercase;
+    
 }
   
 #elementsNavbar li a:hover{
     color: black;
 }
   
+#logo{
+    height:15%;
+    width: 15%;   
+    vertical-align: middle;
+}
+
+
+
 #elementsNavbar li a{
     text-decoration: none;
-   
+    display: inline;
+    padding: 0px;
+    margin: 0px;
+
 }
 
 #boxOne h1{

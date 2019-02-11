@@ -114,10 +114,64 @@ button_newText.addEventListener('click',()=>{
 
 const button_exit = document.getElementById('btnExit');
 
-/*Arrow function que ocurre cuando el usuario presionar el boton "Decifrar", 
-oculta la sección 3 y muestra la sección 2*/
+/*Arrow function que redireeciona a la pagina de google*/
 button_exit.addEventListener('click',()=>{
     
-    return alert("Gracias por usar esta aplicación. Hasta la próxima");
+    alert("Gracias por usar SimpleyKey. Hasta la próxima");
+   
+})
 
+//V.Implementacion barra Nav
+
+//Página de inicio
+const nav_index = document.getElementById('index');
+
+nav_index.addEventListener('click',()=>{
+
+    let welcomeScreen=document.getElementById("boxOne");
+    welcomeScreen.style.display="block";  
+    let cipherScreen=document.getElementById("boxTwo");
+    cipherScreen.style.display="none";
+    let resultDecodeScreen=document.getElementById("boxThree");
+    resultDecodeScreen.style.display="none";
+    let informationScreen=document.getElementById("boxFour");
+    informationScreen.style.display="none";
+
+    document.getElementById("offset").value = "";
+    document.getElementById("text").value = "";
+    document.getElementById("resultText").innerHTML = "";
+
+})
+
+//Utilice Simpleykey
+const nav_use = document.getElementById('use');
+
+//Arrow function que ocurre cuando el usuario presionar el boton "Usar", oculta la sección 1 y muestra la sección 2
+nav_use.addEventListener('click',()=>{
+
+    let cipherScreen=document.getElementById("boxTwo");
+    cipherScreen.style.display="block";
+    let welcomeScreen=document.getElementById("boxOne");
+    welcomeScreen.style.display="none";  
+    let resultDecodeScreen=document.getElementById("boxThree");
+    resultDecodeScreen.style.display="none";
+    let informationScreen=document.getElementById("boxFour");
+    informationScreen.style.display="none";
+
+})
+
+//Utilice Simpleykey
+const nav_information = document.getElementById('information');
+
+//Arrow function que ocurre cuando el usuario presionar el boton "Usar", oculta la sección 1 y muestra la sección 2
+nav_information.addEventListener('click',()=>{
+
+    let informationScreen=document.getElementById("boxFour");
+    informationScreen.style.display="block"
+    let welcomeScreen=document.getElementById("boxOne");
+    welcomeScreen.style.display="none";
+    let cipherScreen=document.getElementById("boxTwo");
+    cipherScreen.style.display="none";
+    let resultDecodeScreen=document.getElementById("boxThree");
+    resultDecodeScreen.style.display="none";
 })

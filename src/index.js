@@ -18,13 +18,13 @@ button_use.addEventListener('click',()=>{
 //1) Constante que obtiene el evento click del boton btnEncode
 const button_encode = document.getElementById('btnEncode');
 
-//Arrow function que ocurre cuando el usuario presionar el boton "Cifrar", oculta la sección 2 
-//y muestra la sección 3 con el texto cifrado
+/*Arrow function que ocurre cuando el usuario presionar el boton de cifrado, oculta la sección 2 
+y muestra la sección 3 con el texto cifrado*/
 button_encode.addEventListener('click',()=>{
 
     //constantes para guardar los datos desde el html
-    const inputOffset=document.getElementById('offset')
-    const inputText=document.getElementById('text')
+    const inputOffset=document.getElementById('offset');
+    const inputText=document.getElementById('text');
 
     //Guarda en las variables (valueOffset y valueText) los datos, para traspasarlas al cipher.js
     let valueOffset=inputOffset.value;
@@ -54,13 +54,13 @@ button_encode.addEventListener('click',()=>{
 //2) Constante que obtiene el evento click del boton btnDecode
 const button_decode = document.getElementById('btnDecode');
 
-//Arrow function que ocurre cuando el usuario presionar el boton "Cifrar", oculta la sección 2 
-//y muestra la sección 3 con el texto cifrado
+/*Arrow function que ocurre cuando el usuario presionar el boton de decifrado, oculta la sección 2 
+y muestra la sección 3 con el texto decifrado*/
 button_decode.addEventListener('click',()=>{
 
     //constantes para guardar los datos desde el html
-    const inputOffset=document.getElementById('offset')
-    const inputText=document.getElementById('text')
+    const inputOffset=document.getElementById('offset');
+    const inputText=document.getElementById('text');
 
     //Guarda en las variables (valueOffset y valueText) los datos, para traspasarlas al cipher.js
     let valueOffset=inputOffset.value;
@@ -87,12 +87,12 @@ button_decode.addEventListener('click',()=>{
 
 })
 
-/*III. Implementación para ingresar nuevo texto a evaluar (ocultar sección 2 (boxTwo) 
-/y mostrar sección 3 (boxThree))*/
+/*III. Implementación para ingresar nuevo texto a evaluar (ocultar sección 3 (boxThree) 
+y mostrar sección 2 (boxTwo))*/
 
 const button_newText = document.getElementById('btnNewText');
 
-/*Arrow function que ocurre cuando el usuario presionar el boton "Decifrar", 
+/*Arrow function que ocurre cuando el usuario presionar el boton "nuevo texto", 
 oculta la sección 3 y muestra la sección 2*/
 
 button_newText.addEventListener('click',()=>{
@@ -123,7 +123,7 @@ button_exit.addEventListener('click',()=>{
 
 //V.Implementacion barra Nav
 
-//Página de inicio
+//enlace Página de inicio
 const nav_index = document.getElementById('index');
 
 nav_index.addEventListener('click',()=>{
@@ -143,10 +143,9 @@ nav_index.addEventListener('click',()=>{
 
 })
 
-//Utilice Simpleykey
+//enlace "Utilice Simpleykey"
 const nav_use = document.getElementById('use');
 
-//Arrow function que ocurre cuando el usuario presionar el boton "Usar", oculta la sección 1 y muestra la sección 2
 nav_use.addEventListener('click',()=>{
 
     let cipherScreen=document.getElementById("boxTwo");
@@ -160,10 +159,9 @@ nav_use.addEventListener('click',()=>{
 
 })
 
-//Utilice Simpleykey
+//enlace "Como funciona"
 const nav_information = document.getElementById('information');
 
-//Arrow function que ocurre cuando el usuario presionar el boton "Usar", oculta la sección 1 y muestra la sección 2
 nav_information.addEventListener('click',()=>{
 
     let informationScreen=document.getElementById("boxFour");

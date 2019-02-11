@@ -1,12 +1,128 @@
 *{
     padding:0px auto;
     margin:0px auto;
+    font-family: sans-serif;
 }
 
 #boxOne{
     display:block;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 60px;
+    height:500px;
+    background:linear-gradient(180deg,#01579B, #536DFE);
 }
 
 #boxTwo, #boxThree{
     display:none;
+    padding-top: 60px;
+    height:500px;
+    text-align: center;   
+}
+
+#boxFour{
+    display:none;
+}
+
+.header{
+    position: relative;
+    display: flex;
+    
+}
+
+#navbar{
+    background:#01579B;
+    padding-left: 100px;
+    padding-right: 50px;
+}
+  
+#elementsNavbar li {
+    list-style: none;
+    display: inline-block;   
+    padding: 20px;
+ 
+} 
+  
+#elementsNavbar li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+  
+#elementsNavbar li a:hover{
+    color: black;
+}
+  
+#elementsNavbar li a{
+    text-decoration: none;
+   
+}
+
+#boxOne h1{
+    padding-top:50px;
+    padding-right: 600px;
+    color: white;
+}
+
+#boxOne p{
+    padding-top:20px;
+    padding-right: 600px;
+    color: white;
+}
+
+#btnUse{
+    margin-top: 20px;
+    cursor: pointer;
+    background: #FF6F00;
+    border: 2px solid #FF6F00;
+    padding: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+.form{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:100px;
+    
+}
+
+#offset{
+    width:300px;
+    margin-left:30px;
+    font-size: 18px;
+}
+
+#text{
+    margin-top:20px;
+    width:300px;
+    height:50px;
+    margin-left:30px;
+    font-size: 18px;
+}
+
+#btnEncode, #btnDecode,#btnNewText{
+    margin-top: 20px;
+    cursor: pointer;
+    background: #FF6F00;
+    border: 2px solid #FF6F00;
+    padding: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+#btnExit{
+    text-decoration: none;
+    background: #FF6F00;
+    border: 2px solid #FF6F00;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    padding: 14.5px 81px;
 }

@@ -2,51 +2,61 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Simplykey</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <!--Encabezado página-->
-    <header> 
-      <h1>Código César</h1>
+    <header>
+      <div id="header">
+        <nav  id="navbar">       
+            <ul id="elementsNavbar">
+              <a id="index" href="#"><img src="img/logo.png"  id="logo" alt="Logo SimplyKey"/></a>   
+              <li><a id="information" href="#">Cómo funciona</a></li>
+              <li><a id="use" href="#">Utilice SimplyKey</a></li>
+            </ul>	
+        </nav>
+      </div>
     </header>
     <!--Primera sección-->
     <section id="boxOne"> 
-      <h1>Bienvenida</h1>
-      <h3>Indicaciones de uso</h3>
-      <p>bla bla</p>
-      <button id="btnUse">Usar</button>
+      <h1>No olvide jamás una contraseña</h1>   
+      <p>Experimente su mejor vida en línea con Simplykey, la manera segura y sencilla de generar contraseñas.</p>
+      <button id="btnUse">Utilice Simplykey</button>   
     </section>
+
     <!--Segunda sección-->
     <section id="boxTwo">
       <div class="form">
         <div>
-        <input type="text" placeholder="Ingresa tu desplazamiento" id="offset" title="debe ser un digito positivo" autofocus> 
+        <input type="text" placeholder="Ingresa tu nivel de seguridad" id="offset" autofocus> 
         </div>
-
         <div>
           <textarea placeholder="Ingresa tu texto" title="debes ingresar mayúsculas" id="text"></textarea> 
         </div>
-        <button id="btnEncode">Cifrar</button>
-        <button id="btnDecode">Decifrar</button>
+        <button id="btnEncode">Generar Contraseña</button>
+        <button id="btnDecode">Restaurar Contraseña</button>
       </div> 
     </section >
     <!--Tercera sección-->
     <section id="boxThree">
-        <div class="form">
+        <form class="form">
           <div>
-            <textarea id="resultText"></textarea> 
+            <p id="resultText"></p> 
           </div>
-          <button id="btnNewText">Nuevo texto</button>
-          <a href="http://www.google.cl">
-            <button id="btnExit">Salir</button>
-          </a>
-        </div> 
+          <button id="btnNewText">Nueva contraseña</button>
+          <a href="http://www.google.cl" id="btnExit">Salir</a>
+        </form> 
     </section>
+    <!--Cuarta sección-->
+    <section id="boxFour">
+      <h1>Funcionamiento</h1>
+    </section>
+
     <!--Creditos de la página-->
     <footer>
-      <p>Aqui va el footer</p>
+      <p>2019 Simplykey. Todos los derechos reservados</p>
     </footer>
    
     <script src="cipher.js"></script>

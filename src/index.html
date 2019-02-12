@@ -13,7 +13,7 @@
       <div id="header">
         <nav  id="navbar">       
           <ul id="elementsNavbar">
-            <a id="index" href="#"><img src="image/SimplyKey.png" id="logo" alt="Logo SimplyKey"/></a>  
+            <a id="index" href="#"><img src="image/SimplyKey.png" id="logo"  alt="Logo SimplyKey"/></a>  
             <li><a id="information" href="#">Cómo funciona</a></li>
             <li><a id="use"  href="#">Utilice SimplyKey</a></li>
           </ul>	
@@ -22,22 +22,27 @@
     </header>
     <!--Primera sección-->
     <section id="boxOne"> 
-      <h1>No olvide jamás una contraseña</h1>   
-      <p>Experimente su mejor vida en línea con Simplykey, la manera segura y sencilla de generar contraseñas.</p>
-      <button id="btnUse">Utilice Simplykey</button>   
+      <div class="row">
+        <h1>No olvide jamás una contraseña</h1>   
+        <p>Experimente su mejor vida en línea con SimplyKey, la manera segura y sencilla de generar contraseñas.</p>
+        <button id="btnUse">Utilice SimplyKey</button> 
+      </div>
+             
     </section>
 
     <!--Segunda sección-->
     <section id="boxTwo">
       <div class="form">
         <div>
-        <input type="text" placeholder="Ingresa tu nivel de seguridad" id="offset" autofocus> 
+        <span class="tooltiptext" data-tooltip aria-haspopup="true" title="Debes ingresar un dígito">
+          <input class="tooltip" type="text" placeholder="Ingresa tu nivel de seguridad" id="offset" autofocus> 
+        </span>
         </div>
-        <div>
-          <textarea placeholder="Ingresa tu texto" title="debes ingresar mayúsculas" id="text"></textarea> 
+        <div class="tooltiptext" title="Debes ser en mayúscula"> 
+          <textarea placeholder="Ingresa tu texto aqui" id="text" class="tooltip"></textarea> 
         </div>
         <button id="btnEncode">Generar Contraseña</button>
-        <button id="btnDecode">Restaurar Contraseña</button>
+        <button id="btnDecode">Restaurar Texto</button>
       </div> 
     </section >
     <!--Tercera sección-->
@@ -46,7 +51,7 @@
           <div>
             <p id="resultText"></p> 
           </div>
-          <button id="btnNewText">Nueva contraseña</button>
+          <button id="btnNewText">Nuevo Intento</button>
           <a href="http://www.google.cl" id="btnExit">Salir</a>
         </form> 
     </section>
@@ -57,7 +62,7 @@
 
     <!--Creditos de la página-->
     <footer>
-      <p>2019 Simplykey. Todos los derechos reservados</p>
+      <p>2019 SimplyKey. Todos los derechos reservados</p>
     </footer>
    
     <script src="cipher.js"></script>

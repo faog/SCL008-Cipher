@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>SimplyKey</title>
     <link rel="shortcut icon" href="image/keyFavicon.png" type="image/x-icon" />
+    <!--CSS Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    <!--CSS Style.css-->
     <link rel="stylesheet" href="style.css" />    
   </head>
 
@@ -21,29 +24,28 @@
       </div>
     </header>
     <!--Primera sección-->
-    <section id="boxOne"> 
+    <section id="boxOne" class="container-fluid"> 
       <div class="row">
-        <h1>No olvide jamás una contraseña</h1>   
-        <p>Experimente su mejor vida en línea con SimplyKey, la manera segura y sencilla de generar contraseñas.</p>
-        <button id="btnUse">Utilice SimplyKey</button> 
+        <div class="col col-lg-6 col-xs-12">
+            <h1>No vuelvas a olvidar una contraseña</h1>   
+            <p>Experimenta una mejor vida en línea con SimplyKey, la manera segura y sencilla de generar contraseñas.</p>
+            <button id="btnUse">Utilice SimplyKey</button> 
+        </div>
+        <div class="col col-lg-6 col-xs-12" >
+          <img src="image/willowComputer.jpg" id="coverImage" class="rounded mx-auto d-block" alt="Logo SimplyKey" class="col col-lg-8"/>
+        </div>
       </div>
              
     </section>
 
     <!--Segunda sección-->
     <section id="boxTwo">
-      <div class="form">
-        <div>
-        <span class="tooltiptext" data-tooltip aria-haspopup="true" title="Debes ingresar un dígito">
-          <input class="tooltip" type="text" placeholder="Ingresa tu nivel de seguridad" id="offset" autofocus> 
-        </span>
-        </div>
-        <div class="tooltiptext" title="Debes ser en mayúscula"> 
-          <textarea placeholder="Ingresa tu texto aqui" id="text" class="tooltip"></textarea> 
-        </div>
-        <button id="btnEncode">Generar Contraseña</button>
-        <button id="btnDecode">Restaurar Texto</button>
-      </div> 
+      <div class="form" >        
+            <input type="text" title="Debes ingresar un dígito"  placeholder="Ingresa tu nivel de seguridad" id="offset" autofocus> 
+            <textarea title="Debes ingresar mayúsculas"  placeholder="Ingresa tu texto" title="debes ingresar mayúsculas" id="text"></textarea> 
+            <button id="btnEncode">Generar Contraseña</button>
+            <button id="btnDecode">Restaurar Texto</button>
+      </div>      
     </section >
     <!--Tercera sección-->
     <section id="boxThree">
@@ -57,12 +59,13 @@
     </section>
     <!--Cuarta sección-->
     <section id="boxFour">
-      <h1>Funcionamiento</h1>
+    
     </section>
+
 
     <!--Creditos de la página-->
     <footer>
-      <p>2019 SimplyKey. Todos los derechos reservados</p>
+      <p>2019 SimplyKey. Todos los derechos reservados.</p>
     </footer>
    
     <script src="cipher.js"></script>

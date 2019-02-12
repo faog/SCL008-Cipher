@@ -12,25 +12,25 @@
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 100px;
-    height:520px;
+    height:600px;
     background:linear-gradient(180deg,#2471A3, #2980B9);
+    
 }
 
 /*Sección cifrado-decifrado y resultado*/
 #boxTwo, #boxThree{
     display:none;
     padding-top: 100px;
-    height:520px;
+    height:600px;
     text-align: center; 
     background-image: url("image/background.jpg");  
-    background-size: cover;    
-    
+    background-size: cover;  
 }
 
 /*Sección funcionamiento*/
 #boxFour{
     display:none;
-    padding-top: 100px;
+   
    
 }
 
@@ -39,11 +39,13 @@
     background-color:#2471A3;
     padding-left: 50px;
     padding-top: 5px;
+    padding-bottom: 5px;
     position: fixed;
     padding-top: 20px;
-    height: 60px;
+    height: 80px;
+    z-index: 5;
 }
- 
+
 #elementsNavbar li {
     list-style: none;
     display: inline-block;      
@@ -82,24 +84,33 @@
 }
 
 /*Elementos seccion 1*/
+
+/*Imagen portada*/
+#coverImage{   
+    height:70%;
+    width: 70%; 
+    padding-right:20px;
+    margin-top:100px;
+    opacity: 0.8;  
+}
+
 #boxOne h1{
-    padding-top:80px;
-    padding-right: 700px;
+    padding-top:100px;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:36px;
     letter-spacing: 2px;
 }
 
-#boxOne p{
+
+
+#boxOne p{ 
     padding-top:30px;
     padding-bottom: 20px;
-    padding-right: 700px;
     color: white;
     letter-spacing: 1px;
     line-height: 25px;
     font-size:18px;
-
 }
 
 #btnUse{
@@ -123,32 +134,26 @@
     font-weight: bold;    
 }
 
-#image{
-    height:40%;
-    width: 50%;   
-    vertical-align: middle;
-}
 
 /*Elementos sección 2 y 3*/
 .form{
-    padding-top:100px;
+    padding-top:30px;
     border: 2px solid #2980B9;
     background-color: #2980B9;
-    fill-opacity: initial;
     text-align: center;
-    padding: 60px;
-	margin:10px;
+    margin-top:100px;
+    margin-left:auto;
+    margin-right: auto;
 	border-radius: 20px;
-	width:300px;
-	height: 350px;
-	position:absolute;
-    left:35%;
+	width:560px;
+    height: 300px;
     
+	     
 }
 
 #offset{
     margin-top:30px;
-    width:300px;    
+    width:400px;    
     font-size: 16px;
     border-radius: 5px;
     color:#212121;
@@ -158,7 +163,7 @@
 
 #text{
     margin-top:20px;
-    width:300px;
+    width:400px;
     height:50px;
     font-size: 16px;
     resize:none;
@@ -190,7 +195,7 @@
 }
 
 #resultText{
-    padding-top:20px;
+    padding-top:30px;
     padding-bottom: 20px;    
     color: white;
     letter-spacing: 1px;
@@ -201,7 +206,7 @@
 
 /*Botones resultado*/
 #btnNewText{
-    margin-top: 100px;
+    margin-top: 30px;
     cursor: pointer;
     background: #FF6F00;
     border: 2px solid #FF6F00;
@@ -216,7 +221,7 @@
 }
 
 #btnExit{
-    margin-top: 50px;
+    margin-top: 30px;
     text-decoration: none;
     background: #FF6F00;
     border: 2px solid #FF6F00;
@@ -227,49 +232,31 @@
     border-radius: 10px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer{
     background-color: #BDBDBD;
-    padding-top:5px;
-    padding-bottom: 15px;
+    padding-top:10px;
+    padding-bottom: 10px;
     font-size:14px;
     color:#424242;
+    padding-left:100px;
     
 }
 
-/*
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
-  
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 150%;
-    left: 50%;
-    margin-left: -60px;
-}
-  
-.tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: black transparent transparent transparent;
-}
-  
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-}
-*/

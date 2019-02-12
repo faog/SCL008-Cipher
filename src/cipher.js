@@ -9,8 +9,8 @@ window.cipher = {
     }
     
     //Condición que valida que el offset debe ser un number
-    if(isNaN(valueOffset) && valueOffset<1){
-      return alert("El nivel de seguridad debe ser un número mayor a 0")
+    if(isNaN(valueOffset)){
+      return alert("El nivel de seguridad debe ser un dígito")
     }
     
     //Condición que valida que el offset debe ser mayor a 0
@@ -56,8 +56,8 @@ window.cipher = {
     }
     
     //Condición que valida que el offset debe ser un number
-    if(isNaN(valueOffset) && valueOffset<1){
-      return alert("El nivel de seguridad debe ser un número mayor a 0")
+    if(isNaN(valueOffset)){
+      return alert("El nivel de seguridad debe ser un un dígito")
     }
     
     //Condición que valida que el offset debe ser mayor a 0

@@ -157,6 +157,11 @@ nav_use.addEventListener('click',()=>{
     let informationScreen=document.getElementById("boxFour");
     informationScreen.style.display="none";
 
+    document.getElementById("offset").value = "";
+    document.getElementById("text").value = "";
+    document.getElementById("resultText").innerHTML = "";
+
+
 })
 
 //enlace "Como funciona"
@@ -172,4 +177,9 @@ nav_information.addEventListener('click',()=>{
     cipherScreen.style.display="none";
     let resultDecodeScreen=document.getElementById("boxThree");
     resultDecodeScreen.style.display="none";
+
+    document.getElementById("offset").value = "";
+    document.getElementById("text").value = "";
+    document.getElementById("resultText").innerHTML = "";
+
 })

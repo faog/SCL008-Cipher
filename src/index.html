@@ -27,39 +27,108 @@
     <section id="boxOne" class="container-fluid"> 
       <div class="row">
         <div class="col col-lg-6 col-xs-12">
-            <h1>No vuelvas a olvidar una contraseña</h1>   
-            <p>Experimenta una mejor vida en línea con SimplyKey, la manera segura y sencilla de generar contraseñas.</p>
-            <button id="btnUse">Utilice SimplyKey</button> 
+          <h1>No vuelvas a olvidar una contraseña</h1>   
+          <p>Experimenta una mejor vida en línea con SimplyKey, la manera segura y sencilla de generar contraseñas.</p>
+          <button id="btnUse">Utilice SimplyKey</button> 
         </div>
         <div class="col col-lg-6 col-xs-12" >
-          <img src="image/willowComputer.jpg" id="coverImage" class="rounded mx-auto d-block" alt="Logo SimplyKey" class="col col-lg-8"/>
+          <img src="image/lostPassword.png" id="coverImage" class="rounded mx-auto d-block col col-lg-8" alt="icono perder contraseña"/>
         </div>
       </div>
              
     </section>
 
     <!--Segunda sección-->
-    <section id="boxTwo">
-      <div class="form" >        
+    <section id="boxTwo" class="container-fluid">
+      <div class="row">
+        <div id="useSimplyKey" class="col col-lg-4">
+            <p><strong>Para usar SimpleyKey, usted solo necesita:</strong></p>
+            <ul>
+                <li>Un nivel de seguridad, que debe ser a un dígito. </li>
+                <li>Un texto sencillo de recordar.</li>
+                <li>Si ingresa algun carácter no válido, ¡SimpleyKey se lo indicará!.</li>                
+            </ul>
+            <p>SimpleyKey no guarda ninguna información personal, por lo que su privacidad está garantizada.</p>
+        </div>
+        <div class="form">        
             <input type="text" title="Debes ingresar un dígito"  placeholder="Ingresa tu nivel de seguridad" id="offset" autofocus> 
-            <textarea title="Debes ingresar mayúsculas"  placeholder="Ingresa tu texto" title="debes ingresar mayúsculas" id="text"></textarea> 
+            <textarea title="Debes ingresar mayúsculas"  placeholder="Ingresa tu texto" id="text"></textarea> 
             <button id="btnEncode">Generar Contraseña</button>
             <button id="btnDecode">Restaurar Texto</button>
-      </div>      
+        </div>
+      </div> 
+          
     </section >
     <!--Tercera sección-->
-    <section id="boxThree">
-        <form class="form">
-          <div>
-            <p id="resultText"></p> 
-          </div>
+    <section id="boxThree" class="container-fluid">
+      <div class="row">
+        <div id="resultSimplyKey" class="col col-lg-4">
+            <p><strong>Recuerde que puede recuperar su texto:</strong></p>
+            <ul>
+              <li>Elija la opción <em>Nuevo Intento</em>.</li>
+              <li>En la nueva ventana, ingrese los datos solicitados.</li>
+              <li>En vez de generar contraseña, escoja la opción <em>Restaurar texto</em>.</li>                               
+            </ul>
+        </div>
+        <div class="form">        
+          <p id="resultText"></p>         
           <button id="btnNewText">Nuevo Intento</button>
-          <a href="http://www.google.cl" id="btnExit">Salir</a>
-        </form> 
+          <a href="http://www.google.cl" id="btnExit">Salir</a>        
+      </div>
     </section>
     <!--Cuarta sección-->
-    <section id="boxFour">
-    
+    <section id="boxFour" class="container-fluid">
+
+      <div class="row">
+        <div id="start" class="col col-lg-12">
+          <h1>Deje de perder tiempo en crear contraseñas seguras, SimpleyKey hara el trabajo por usted. </h1> 
+          <h3>Ocupe su valioso tiempo en disfrutar en las cosas que más le gusta realizar.</h3>
+        </div>
+      </div>
+      
+      <div id="introduction" class="row">
+        <div class="col col-lg-8">
+            <h4>Use contraseñas seguras</h4>
+            <p>Deje de pensar en contraseñas cada vez más complicadas. </p>
+            <p>SimpleyKey le permitirá generar contraseñas únicas y complejas de manera rápida y sencilla; 
+              las cuales serán resistentes al hackeo.</p>
+        </div>
+
+        <div class="col col-lg-4">
+            <img src="image/password.png" id="passwordImage" class="rounded mx-auto d-block col col-lg-8" alt="personas usando pc"/>
+        </div>
+      </div> 
+
+      <div id="passwordGenerator" class="row">
+        <div class="col col-lg-6">
+          <img src="image/imgUseSK.png" id="imageUseSK" class="rounded mx-auto d-block col col-lg-8" alt="usando SimpleyKey"/>
+        </div>
+        <div class="col col-lg-6">
+          <h4>¿Qué es un generador de contraseñas?</h4>
+          <p>Es una herramienta que genera una contraseña de forma automática, en base a 
+            los parámetros que usted define.</p>
+          <p><strong>Para usar SimpleyKey, usted solo necesita recordar:</strong></p>
+          <ul>
+            <li>Un nivel de seguridad, que corresponde a un dígito. Entre más grande su tamaño, más segura será la contraseña.</li>
+            <li>Un texto (puede usar espacios) sencillo de recordar.</li>
+            <li>Está permitido usar como texto letras (mayúsculas y minúsculas), dígitos y carácteres. Si ingresa algun carácter no válido, ¡SimpleyKey se lo indicará!.</li>
+          </ul>
+          <p>Así, podrá generar su <em>nueva contraseña</em>.</p>
+        </div>
+      </div> 
+
+      <div id="textRestore" class="row">
+          <div  class="col col-lg-6">
+            <h4>¿Obtuvo su contraseña y no recuerda que texto utilizó para generarla?</h4>
+            <p>SimpleyKey le permite restaurar su contraseña al texto usado.</p>
+            <p>Utilice la opción <em>Restaurar texto</em>, para obtener el texto usado para generar la contraseña. 
+              Sólo debe recordar su nivel de seguridad.</p>            
+          </div>
+          <div class="col col-lg-6">
+              <img src="image/imageTextRestore.png" id="imageTextRestore" class="rounded mx-auto d-block col col-lg-8" alt="restaurar contraseña"/>
+          </div>
+      </div> 
+      
     </section>
 
 

@@ -62,7 +62,7 @@ Esta corresponde a la pantalla de inicio, donde se da la bienvenida al usuario j
 
 ![Pantalla 1](https://github.com/faog/SCL008-Cipher/blob/master/src/image/Prototype/Image1.jpg)
 
-### **b) Segunda pantalla**
+### **c) Segunda pantalla**
 
 Esta corresponde a la pantalla donde el usuario ingresa un nivel de seguridad (debe ser un dígito) y el texto a transformar. En esta pantalla, el usuario puede elegir (a partir de botones) si desea cifrar o decifrar su texto.
 
@@ -74,20 +74,17 @@ Además, es posible mostrar información de ayuda al usuario, al momento posicio
 
 *¿Que sucede si el usuario ingresa carácteres invalidos?*
 
-SymplyKey tiene cubierto esto, generando una mensaje de alerta, indicando cual es el error encontrado.
+SimplyKey tiene cubierto esto generando una mensaje de alerta, indicando cual es el error encontrado.
 
 ![Pantalla 4](https://github.com/faog/SCL008-Cipher/blob/master/src/image/Prototype/Image4.jpg)
 
-### **b) Tercera pantalla**
+### **d) Tercera pantalla**
 
-Luego de eligir la opción de cifrado (o decifrado), se aprecia una nueva ventana, donde el usuario obtiene su texto modificado. Aqui, el usuario puede decidir 2 opciones, a partir de los botones *nuevo texto* (que se retrocede a la ventana de cifrado) 
+Luego de eligir la opción de cifrado (o decifrado), se aprecia una nueva ventana, donde el usuario obtiene su texto modificado. Aqui, el usuario puede decidir 2 opciones, a partir de los botones *nuevo texto* (que se retrocede a la ventana de cifrado).
 
 ![Pantalla 3](https://github.com/faog/SCL008-Cipher/blob/master/src/image/Prototype/Image3.jpg)
 
-
-
-
-Aqui, el usuario puede decidir 2 opciones, a partir de los botones *nuevo texto* (que se retrocede a la ventana de cifrado); o bien, presionar el botón salir, generando un mensaje de agradecimiento
+Aqui, el usuario puede decidir 2 opciones, a partir de los botones *nuevo texto* (que se retrocede a la ventana de cifrado); o bien, presionar el botón salir, generando un mensaje de agradecimiento.
 
 ![Pantalla 3b](https://github.com/faog/SCL008-Cipher/blob/master/src/image/Prototype/Image3b.jpg)
 
@@ -95,7 +92,7 @@ y redireccionar a google.
 
 ![Pantalla 5](https://github.com/faog/SCL008-Cipher/blob/master/src/image/Prototype/Image5.jpg)
 
-## Testing
+## Testing ⚙️
 
 Con los sketch propuestos se realizó el proceso de testing; obteniendo el siguiente feedback:
 
@@ -105,32 +102,45 @@ Con los sketch propuestos se realizó el proceso de testing; obteniendo el sigui
 
 ## Prototipado (2 iteración) 📄✒️
 
+Considerando el feedback recibido, se hizo modificaciones a la aplicación.
+
+Para su desarrollo, se usa html5 para la maqueta compuesta por 4 pantallas; y de acuerdo a la psicología del color, se selecciona una paleta de colores, donde el azul debido a que transmite seguridad  por lo que se usa como principal en la aplicación, complementado con tonos de naranjo, grises y blanco.
+
+[Aquí](https://en.wikipedia.org/wiki/Caesar_cipher), podrás ver el resultado final y empezar a crear tus contraseñas de manera más sencilla.
+
 ##
 
-## Futuras mejoras
+## Consideraciones en el desarrollo 🛠️
 
-### Parte Obligatoria
-* [ ] `README.md` incluye info sobre proceso y decisiones de diseño.
-* [ ] `README.md` explica claramente quiénes son los usuarios y su relación con
-  el producto.
-* [ ] `README.md` explica claramente cómo el producto soluciona los
-  problemas/necesidades de los usuarios.
-* [ ] Usa VanillaJS.
-* [ ] No utiliza `this`.
-* [ ] Implementa `cipher.encode`.
-* [ ] Implementa `cipher.decode`.
-* [ ] Pasa linter con configuración provista.
-* [ ] Pasa pruebas unitarias.
-* [ ] Pruebas unitarias cubren 70% de _statements_, _functions_ y _lines_, y un
-  mínimo del 50% de _branches_.
-* [ ] Interfaz permite elegir el `offset` o _desplazamiento_ a usar en el
-  cifrado/descifrado.
-* [ ] Interfaz permite escribir un texto para ser cifrado.
-* [ ] Interfaz muestra el resultado del cifrado correctamente.
-* [ ] Interfaz permite escribir un texto para ser descifrado.
-* [ ] Interfaz muestra el resultado del descifrado correctamente.
+- Para el desarrollo de SimplyKey, se utilizó [bootstrap](https://getbootstrap.com/docs/4.3/layout/grid/) para el sistema de grilla.
 
-### Parte Opcional: "Hacker edition"
-* [ ] Cifra/descifra minúsculas
-* [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
-* [ ] Permite usar un `offset` negativo.
+- SimplyKey está implementado para cifrar o decifrar textos que incluya letras (mayúsculas y minúsculas), dígitos y carácteres. Si por algún motivo, ingresas un carácter no válido, la aplicación genera un mensaje de alerta indicando el error.
+
+- Se realizaron test para probar el funcionamiento de la aplicación, alcanzando los siguientes resultados:
+
+    - % Statements: 76,27
+
+    - % Branch: 77,27
+
+    - % Functions: 100
+
+    - % Lines: 75,44
+
+## Futuras mejoras ⌨️
+
+- Implementar el cifrado de carácteres de puntuación.
+
+- Implementar que el usuario pueda ingresar un nivel de seguridad (offset) negativo.
+
+- A modo de desafío, seria interesante que el usuario pueda elegir (a partir de un filtro) un rango en que carácteres desea obtener.
+
+- Realizar mas entrevistas, para obtener mayor cantidad de feedback y poder adaptar la aplicación más a las necesidades que genere el usuario.
+
+##  Autor 📌
+
+- Fabiola Orellana G, estudiante de de Laboratoria (8° Generación).
+
+
+
+
+

@@ -108,8 +108,6 @@ Para su desarrollo, se usa html5 para la maqueta compuesta por 4 pantallas; y de
 
 [Aquí](https://en.wikipedia.org/wiki/Caesar_cipher), podrás ver el resultado final y empezar a crear tus contraseñas de manera más sencilla.
 
-##
-
 ## Consideraciones en el desarrollo 🛠️
 
 - Para el desarrollo de SimplyKey, se utilizó [bootstrap](https://getbootstrap.com/docs/4.3/layout/grid/) para el sistema de grilla.
@@ -138,7 +136,7 @@ Para su desarrollo, se usa html5 para la maqueta compuesta por 4 pantallas; y de
 
 ##  Autor 📌
 
-- Fabiola Orellana G, estudiante de de Laboratoria (8° Generación).
+- Fabiola Orellana G, estudiante de Laboratoria (8° Generación).
 
 
 

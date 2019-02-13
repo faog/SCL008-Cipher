@@ -50,11 +50,50 @@ Ya definido nuestro usuario, viene una de las etapas más divertidas (bueno, dep
 
 A continuación, se presenta los sketch realizados para la aplicación:
 
-### **Diagrama de flujo**
+### **a) Diagrama de flujo**
 
-
+La siguiente imagen corresponde al flujo de la aplicación, donde se aprecia los distintos caminos que puede tomar el usuario al momento de usar la aplicación.
 
 ![Diagrama de flujo](https://github.com/faog/SCL008-Cipher/blob/master/src/image/Prototype/Diagrama.jpg)
+
+### **b) Primera pantalla**
+
+Esta corresponde a la pantalla de inicio, donde se da la bienvenida al usuario junto a las instrucciones de uso. Desde esta pantalla, se puede comenzar a usar la aplicación.
+
+![Pantalla 1](https://github.com/faog/SCL008-Cipher/blob/master/src/image/Prototype/Image1.jpg)
+
+### **b) Segunda pantalla**
+
+Esta corresponde a la pantalla donde el usuario ingresa un nivel de seguridad (debe ser un dígito) y el texto a transformar. En esta pantalla, el usuario puede elegir (a partir de botones) si desea cifrar o decifrar su texto.
+
+![Pantalla 2](https://github.com/faog/SCL008-Cipher/blob/master/src/image/Prototype/Image2.jpg)
+
+Además, es posible mostrar información de ayuda al usuario, al momento posicionar el puntero del mouse sobre el campo a rellenar.
+
+![Pantalla 2b](https://github.com/faog/SCL008-Cipher/blob/master/src/image/Prototype/Image2b.jpg)
+
+*¿Que sucede si el usuario ingresa carácteres invalidos?*
+
+SymplyKey tiene cubierto esto, generando una mensaje de alerta, indicando cual es el error encontrado.
+
+![Pantalla 4](https://github.com/faog/SCL008-Cipher/blob/master/src/image/Prototype/Image4.jpg)
+
+### **b) Tercera pantalla**
+
+Luego de eligir la opción de cifrado (o decifrado), se aprecia una nueva ventana, donde el usuario obtiene su texto modificado. Aqui, el usuario puede decidir 2 opciones, a partir de los botones *nuevo texto* (que se retrocede a la ventana de cifrado) 
+
+![Pantalla 3](https://github.com/faog/SCL008-Cipher/blob/master/src/image/Prototype/Image3.jpg)
+
+
+
+
+Aqui, el usuario puede decidir 2 opciones, a partir de los botones *nuevo texto* (que se retrocede a la ventana de cifrado); o bien, presionar el botón salir, generando un mensaje de agradecimiento
+
+![Pantalla 3b](https://github.com/faog/SCL008-Cipher/blob/master/src/image/Prototype/Image3b.jpg)
+
+y redireccionar a google.
+
+![Pantalla 5](https://github.com/faog/SCL008-Cipher/blob/master/src/image/Prototype/Image5.jpg)
 
 ## Testing
 

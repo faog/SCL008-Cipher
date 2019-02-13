@@ -106,7 +106,7 @@ Considerando el feedback recibido, se hizo modificaciones a la aplicación.
 
 Para su desarrollo, se usa html5 para la maqueta compuesta por 4 pantallas; y de acuerdo a la psicología del color, se selecciona una paleta de colores, donde el azul debido a que transmite seguridad  por lo que se usa como principal en la aplicación, complementado con tonos de naranjo, grises y blanco.
 
-[Aquí](https://faog.github.io/SCL008-Cipher/src/index.html#), podrás ver el resultado final y empezar a crear tus contraseñas de manera más sencilla.
+[Aquí](https://faog.github.io/SCL008-Cipher/src/index.html), podrás ver el resultado final y empezar a crear tus contraseñas de manera más sencilla.
 
 ## Consideraciones en el desarrollo 🛠️
 

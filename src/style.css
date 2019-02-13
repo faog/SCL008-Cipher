@@ -5,6 +5,10 @@
     font-family: sans-serif;      
     
 }
+html, body
+{
+    height: 100%;
+}
 
 /*Sección inicio*/
 #boxOne{
@@ -12,19 +16,20 @@
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 100px;
-    height:600px;
+    height:100%;
     background:linear-gradient(180deg,#2471A3, #2980B9);
-    
+    margin-bottom:-57px;
 }
 
 /*Sección cifrado-decifrado y resultado*/
 #boxTwo, #boxThree{
     display:none;
     padding-top: 80px;
-    height:600px;
+    height:100%;
     background-color:#ECF0F1;
-    padding-right:150px;
-    padding-left:150px;
+    padding-right:200px;
+    padding-left:200px;
+    margin-bottom:-57px;
 }
 
 
@@ -137,13 +142,10 @@
 }
 
 #useSimplyKey{
-    margin-left: 80px;	
-    margin-right: 0px; 
     color:#212121; 
     padding-top:120px;  
     padding-left:40px;
     text-align: justify;
-        
 }
 
 #useSimplyKey h4{
@@ -151,8 +153,6 @@
 }
 
 #resultSimplyKey{
-    margin-left: 80px;	
-    margin-right: 0px;   
     color:#212121;
     padding-top:150px;  
     padding-left:40px;
@@ -164,7 +164,6 @@
 #boxTwo .row .form{
     margin-left: 0px;	
 	width:560px;
-    height: 520px;
     padding-left:80px;
     text-align: center;
     
@@ -174,7 +173,6 @@
 #boxThree .row .form{
     margin-left: 0px;	
 	width:560px;
-    height: 520px;
     padding-left:80px;
     padding-top:100px;
     text-align: center;
@@ -392,6 +390,9 @@ footer{
     font-size:14px;
     color:#424242;
     padding-left:100px;
-    
+}
+.center-row{
+    padding-bottom:57px;
+    height: 100%
 }
 

@@ -66,7 +66,7 @@ describe('cipher', () => {
     });
 
     it('debería retornar "abcdefghijklmnopqrstuvwxyz" para con offset 33',()=>{
-      assert(cipher.encode(33,"hijklmnopqrstuvwxyzabcdefg"),"abcdefghijklmnopqrstuvwxyz");
+      assert(cipher.decode(33,"hijklmnopqrstuvwxyzabcdefg"),"abcdefghijklmnopqrstuvwxyz");
     });
 
     it('debería retornar "abc def" para "ghi jkl" con offset 6',()=>{

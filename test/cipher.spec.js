@@ -26,10 +26,6 @@ describe('cipher', () => {
       assert(cipher.encode(6,"abc def"),"ghi jkl");
     });
 
-    it('debería retornar "ghi jkl" para "abc def" con offset 6',()=>{
-      assert(cipher.encode(6,"abc def"),"ghi jkl");
-    });
-
     it('debería retornar "Ovsh" para "Hola" con offset 7',()=>{
       assert(cipher.encode(6,"Hola"),"Ovsh");
     });

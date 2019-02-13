@@ -117,7 +117,7 @@ const button_exit = document.getElementById('btnExit');
 /*Arrow function que redireeciona a la pagina de google*/
 button_exit.addEventListener('click',()=>{
     
-    alert("Gracias por usar SimpleyKey. Hasta la próxima");
+    alert("Gracias por usar SimplyKey. Hasta la próxima");
    
 })
 
@@ -143,7 +143,7 @@ nav_index.addEventListener('click',()=>{
 
 })
 
-//enlace "Utilice Simpleykey"
+//enlace "Utilice SimplyKey"
 const nav_use = document.getElementById('use');
 
 nav_use.addEventListener('click',()=>{

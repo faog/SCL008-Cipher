@@ -183,3 +183,4 @@ nav_information.addEventListener('click',()=>{
     document.getElementById("resultText").innerHTML = "";
 
 })
+

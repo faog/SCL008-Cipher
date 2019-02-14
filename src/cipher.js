@@ -53,6 +53,10 @@ window.cipher = {
           //digitos y caracteres
           form = String.fromCharCode(((valueText.charCodeAt(i))-64+parseInt(valueOffset))%32+64);
           result+=form; 
+        }else if(numberAscii>=191 && numberAscii<=253){
+          //caracteres
+          form = String.fromCharCode(((valueText.charCodeAt(i))-253+parseInt(valueOffset))%63+253);
+          result+=form; 
         }else{
           form=String.fromCharCode(numberAscii);      
           return alert(`No esta permitido el carácter ${form}`);
@@ -74,6 +78,10 @@ window.cipher = {
         }else if(numberAscii>=33 && numberAscii<=64){
           //digitos y caracteres
           form = String.fromCharCode(((valueText.charCodeAt(i))-33+parseInt(valueOffset))%32+33);
+          result+=form; 
+        }else if(numberAscii>=191 && numberAscii<=253){
+          //digitos y caracteres
+          form = String.fromCharCode(((valueText.charCodeAt(i))-191+parseInt(valueOffset))%63+191);
           result+=form; 
         }else{
           form=String.fromCharCode(numberAscii);      
@@ -136,6 +144,10 @@ window.cipher = {
           //digitos y caracteres
           form = String.fromCharCode(((valueText.charCodeAt(i))-33-parseInt(valueOffset))%32+33);
           result+=form; 
+        }else if(numberAscii>=191 && numberAscii<=253){
+          //digitos y caracteres
+          form = String.fromCharCode(((valueText.charCodeAt(i))-191-parseInt(valueOffset))%63+191);
+          result+=form; 
         }else{
           form=String.fromCharCode(numberAscii);      
           return alert(`No esta permitido el carácter ${form}`);
@@ -157,6 +169,10 @@ window.cipher = {
         }else if(numberAscii>=33 && numberAscii<=64){
           //digitos y caracteres
           form = String.fromCharCode(((valueText.charCodeAt(i))-64-parseInt(valueOffset))%32+64);
+          result+=form; 
+        }else if(numberAscii>=191 && numberAscii<=253){
+          //digitos y caracteres
+          form = String.fromCharCode(((valueText.charCodeAt(i))-253-parseInt(valueOffset))%63+253);
           result+=form; 
         }else{
           form=String.fromCharCode(numberAscii);      

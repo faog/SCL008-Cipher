@@ -80,7 +80,7 @@ window.cipher = {
           form = String.fromCharCode(((valueText.charCodeAt(i))-33+parseInt(valueOffset))%32+33);
           result+=form; 
         }else if(numberAscii>=191 && numberAscii<=253){
-          //digitos y caracteres
+          //caracteres
           form = String.fromCharCode(((valueText.charCodeAt(i))-191+parseInt(valueOffset))%63+191);
           result+=form; 
         }else{
@@ -145,7 +145,7 @@ window.cipher = {
           form = String.fromCharCode(((valueText.charCodeAt(i))-33-parseInt(valueOffset))%32+33);
           result+=form; 
         }else if(numberAscii>=191 && numberAscii<=253){
-          //digitos y caracteres
+          //caracteres
           form = String.fromCharCode(((valueText.charCodeAt(i))-191-parseInt(valueOffset))%63+191);
           result+=form; 
         }else{
@@ -171,7 +171,7 @@ window.cipher = {
           form = String.fromCharCode(((valueText.charCodeAt(i))-64-parseInt(valueOffset))%32+64);
           result+=form; 
         }else if(numberAscii>=191 && numberAscii<=253){
-          //digitos y caracteres
+          //caracteres
           form = String.fromCharCode(((valueText.charCodeAt(i))-253-parseInt(valueOffset))%63+253);
           result+=form; 
         }else{
